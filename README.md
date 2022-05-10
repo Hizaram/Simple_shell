@@ -27,3 +27,18 @@ In this project, We are expected to look indepthly into:
 9. How to suspend the execution of a process until one of its children terminates
 10. What is EOF / “end-of-file”?
 
+# Shell Features
+Display a prompt and wait for the user to type a command. A command line always ends with a new line.
+The prompt is displayed again each time a command has been executed.
+The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+The command lines are made only of one word. No arguments will be passed to programs.
+If an executable cannot be found, print an error message and display the prompt again.
+Handle errors.
+You have to handle the “end of file” condition (Ctrl+D)
+
+# Compilation
+All the files will be compiled with following:
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+# Authors
+Nwachukwu Promise Chizaram and Christianah Olorunda
