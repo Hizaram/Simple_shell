@@ -1,6 +1,6 @@
 # SIMPLE SHELL
 This project is about writing a simple UNIX command interpreter. 
-<img src="shell.png" alt="Simple Shell">
+<img src="C:\Users\HP\Downloads\shell.png" alt="Simple Shell">
 
 # DESCRIPTION
 Simple_shell is an sh-compatible command language interpreter that executes commands read from the standard input or from a file.
