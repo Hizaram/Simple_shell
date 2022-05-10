@@ -13,3 +13,4 @@ In this project, We are expected to look indepthly into:
 8. How to execute another program with the execve system call
 9. How to suspend the execution of a process until one of its children terminates
 10. What is EOF / “end-of-file”?
+k
