@@ -1,5 +1,12 @@
 # SIMPLE SHELL
 This project is about writing a simple UNIX command interpreter. 
+
+
+
+
+
+
+
 <img src="https://i.njkhanh.com/img/simple-shell-ls-l-c.png?v=1630163126" alt="Simple Shell">
 
 # DESCRIPTION
