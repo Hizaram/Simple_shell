@@ -1,4 +1,4 @@
-# SIMPLE SHELL
+ SIMPLE SHELL
 This project is about writing a simple UNIX command interpreter. 
 
 # REQUIREMENTS
