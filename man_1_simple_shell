@@ -9,7 +9,7 @@ hsh can interpret and execute command line arguments read from the standard inpu
 The hsh shell is a program that reads line by line from a file or the terminal line. It then interprets the lines and executes it if the line is a valid command. 
 
 .SH USAGE
-All the files are to be compiled on an Ubuntu 14.04 LTS machine with "gcc -Wall -Werror -Wextra -pedantic *.c -o hsh".
+All the files are to be compiled on an Ubuntu 20.04 LTS using "gcc -Wall -Werror -Wextra -pedantic *.c -o hsh".
 
 Once compiled, to start the program, run:
 .br
