@@ -1,12 +1,12 @@
 
-.TH man 1 "11 May 2022" "1.0" "hsh The Shell man page"
+.TH man 1 "11 May 2022" "1.0" "Tyza The Shell man page"
 .SH NAME
 .B hsh
 - A basic UNIX command line interpreter.
 .SH SYNOPSIS
-hsh can interpret and execute command line arguments read from the standard input.
+Tyza can interpret and execute command line arguments read from the standard input.
 .SH DESCRIPTION
-The hsh shell is a program that reads line by line from a file or the terminal line. It then interprets the lines and executes it if the line is a valid command. 
+The Tyza shell is a program that reads line by line from a file or the terminal line. It then interprets the lines and executes it if the line is a valid command. 
 
 .SH USAGE
 All the files are to be compiled on an Ubuntu 20.04 LTS using "gcc -Wall -Werror -Wextra -pedantic *.c -o hsh".
@@ -17,10 +17,10 @@ $ ./hsh
 
 To exit the program, run:
 .br
-hsh $ exit
+Tyza $ exit
 
 .SH BUILT-INS
-The following built-ins are supported by the hsh shell:
+The following built-ins are supported by the Tyza shell:
 
 .B env - 
 Print the current environment.
@@ -32,10 +32,10 @@ Initialize a new environment variable, or modify an existing one.
 Remove an environment variable.
 
 .SH RETURN VALUE
-hsh shell will exit with status 0 unless status is specified.
+Tyza shell will exit with status 0 unless status is specified.
 .SH SEE ALSO
 .I sh(1)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Nwachukwu Promise Chizaram, Olorunda Christianah
+Nwachukwu Promise Chizaram, Christianah Olorunda
