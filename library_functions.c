@@ -6,6 +6,7 @@
  * @s2: Second string
  * Return: 0 if strings match. -1 Otherwise.
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -46,6 +47,7 @@ char *_strdup(char *src)
  * @new_line: If integer is 0 a new line will be printed. Otherwise a new line
  * will not be printed.
  */
+
 void print_str(char *str, int new_line)
 {
 	int i;
