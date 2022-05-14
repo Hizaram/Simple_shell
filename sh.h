@@ -46,8 +46,8 @@ void single_free(int, ...);
 int built_in(char **, char *);
 void (*check_built_ins(char *))(char *);
 void exit_b(char *);
-void env_b(char *);
-void cd_b(char *);
+void environ_b(char *);
+void cdir_b(char *);
 
 /*Holberton library functions*/
 int _strcmp(char *, char *);
