@@ -11,15 +11,15 @@ int main(__attribute__((unused)) int ac, char **av)
 {
 	char *line;
 	size_t size;
-	int command_counter;
+	int command_count;
 
-	command_counter = 0;
+	command_count = 0;
 	signal(SIGINT, SIG_IGN);
 	do {
-		command_counter++;
+		command_count++;
 		line = NULL;
 		size = 0;
-		parse_line(line, size, command_counter, av);
+		parser(line, size, command_counter, av);
 
 	} while (1);
 
