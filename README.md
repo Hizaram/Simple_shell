@@ -41,19 +41,19 @@ All the files will be compiled with following:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 Once compiled, to start the program, run;
-./hsh
+`./hsh`
 
 To exit the program, run:
-Tyza $ exit
+`Tyza $ exit`
 
-The Tyza shell supports most shell commands, such as cat, pwd, ls -la and more.
+The Tyza shell supports most shell commands, such as `cat`, `pwd`, `ls -la` and more.
 Built-Ins
 
 The following built-ins are supported by the Tyza shell:
 
-    `env` - Print the current environment
-    `setenv VARIABLE VALUE` - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
-    `unsetenv VARIABLE` - Remove an environment VARIABLE
+    *`env` - Print the current environment
+    *`setenv VARIABLE VALUE` - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
+    *`unsetenv VARIABLE` - Remove an environment VARIABLE
 
 Return Value
 
