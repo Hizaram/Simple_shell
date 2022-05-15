@@ -49,31 +49,32 @@ Tyza $ exit
 The Tyza shell supports most shell commands, such as cat, pwd, ls -la and more.
 Built-Ins
 
-The following built-ins are supported by the Olaf shell:
+The following built-ins are supported by the Tyza shell:
 
-    env - Print the current environment
-    setenv VARIABLE VALUE - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
-    unsetenv VARIABLE - Remove an environment VARIABLE
+    `env` - Print the current environment
+    `setenv VARIABLE VALUE` - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
+    `unsetenv VARIABLE` - Remove an environment VARIABLE
 
 Return Value
 
 Tyza shell will exit with status 0 unless status is specified with syntax exit VALUE.
 List of functions.
-Function Name 	Description
-parser	 	Parses the command line looking for commands and argumements.
-create_Child 	Forks the current process in order to execute another program.
-tokenize 	Separates a string in to an array of tokens based on a delimiter passed to the function.
-count_token 	Counts how many tokens are on a given string that is separated by a delimeter.
-find_path 	Looks through the environmental variables untill it finds the PATH variable, It then returns the index of its possition.
-tokenize_path 	Separates the PATH variable into separate strings each containing a directory in the PATH.
-search_directories 	Looks through directories stored in path_tokens for a specifc file name which represents a command.
-build_path 	Combines two strings, one representing the path directory and the other representing the command file.
-_strcmp 	Compares two strings and if they match the function returns 0.
-_strdup 	Duplicates a string.
-print_str 	Prints a string character by character.
-cdir_b 	Changes the current working directory to the parameter passed to the command cd.
-environ_b 	Prints all environmental variables available in the current shell.
-check_built_ins 	Checks if a command exitst as a builtin funcition and then it returns a pointer to the right function.
+| Function Name |	Description |
+| ------------- | ----------------- |
+| `parser`	| 	Parses the command line looking for commands and argumements. |
+| `create_Child` |	Forks the current process in order to execute another program. |
+| `tokenize` |	Separates a string in to an array of tokens based on a delimiter passed to the function. |
+| `count_token` |	Counts how many tokens are on a given string that is separated by a delimeter. |
+| `find_path` |	Looks through the environmental variables until it finds the PATH variable, It then returns the index of its position. |
+| `tokenize_path` |	Separates the PATH variable into separate strings each containing a directory in the PATH. |
+| `search_directories` |	Looks through directories stored in path_tokens for a specifc file name which represents a command. |
+| `build_path` |	Combines two strings, one representing the path directory and the other representing the command file. |
+| `_strcmp` |	Compares two strings and if they match the function returns 0. |
+| `_strdup` | 	Duplicates a string. |
+| `print_str` |	Prints a string character by character. |
+| `cdir_b` |	Changes the current working directory to the parameter passed to the command cd. |
+| `environ_b`  |	Prints all environmental variables available in the current shell. |
+| `check_built_ins` |	Checks if a command exitst as a builtin funcition and then it returns a pointer to the right function. |
 
 # Authors
 Nwachukwu Promise Chizaram and Christianah Olorunda
