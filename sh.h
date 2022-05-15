@@ -12,7 +12,7 @@
 #include <sys/stat.h>
 #include <stdarg.h>
 #include <signal.h>
-#define PROMPT "Sh $ "
+#define PROMPT "Tyza $ "
 
 
 /**
@@ -49,7 +49,7 @@ void exit_b(char *);
 void environ_b(char *);
 void cdir_b(char *);
 
-/*Holberton library functions*/
+/*Some previous library functions*/
 int _strcmp(char *, char *);
 char *_strdup(char *);
 void print_str(char *, int);
