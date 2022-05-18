@@ -41,6 +41,9 @@ char *search_directories(char **, char *);
 char *build_path(char *, char *);
 void double_free(char **);
 void single_free(int, ...);
+char get_del(char *str, const char *delim)
+char *_strtok_r(char *str, const char *delim)
+char *_strtok(char *str, const char *delim)
 
 /*Builtin functions*/
 int built_in(char **, char *);
