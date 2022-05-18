@@ -2,7 +2,7 @@
 
 /**
  * cdir_b - Changes the current working directory to the parameter
- passed to cd.
+ * passed to cd.
  * if no parameter is passed it will change directory to HOME.
  * @line: A string representing the input from the user.
  */
