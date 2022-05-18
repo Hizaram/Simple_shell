@@ -59,5 +59,6 @@ int _write_char(char);
 /* Helper functions*/
 void error_printing(char *, int, char *);
 void exec_error(char *, int, char *);
+void sigintH(int signum);
 
 #endif
