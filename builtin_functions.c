@@ -48,7 +48,6 @@ void environ_b(__attribute__((unused))char *line)
 			write(STDOUT_FILENO, &environ[i][j], 1);
 		write(STDOUT_FILENO, "\n", 1);
 	}
-	return (1);
 }
 
 /**
