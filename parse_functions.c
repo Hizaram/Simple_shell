@@ -3,9 +3,11 @@
 /**
  * parser - Takes the command line and checks to see if there are arguments.
  * This fucntion also handles freeing memory that is no longer needed.
- * @line: A pointer to a string. It is always NULL when the function is initialised.
+ * @line: A pointer to a string. It is always NULL 
+ * when the function is initialised.
  * @size: A holder for numbers of size_t. Will always be initialized to 0.
- * @command_counter: A counter that holds the numbe of commands that have been fed into the shell.
+ * @command_counter: A counter that holds the number of commands
+ * that have been fed into the shell.
  * @av: Program name of the shell.
  */
 
@@ -93,9 +95,11 @@ void create_child(char **p_array, char *line, int count, char **av)
 }
 
 /**
- * token_connector - Allows the accesibility of token functions with ither parts of the program.
+ * token_connector - Allows the accesibility of token functions
+ * with other parts of the program.
  * @line: A string containing the raw user input.
- * @delimiter: A constant string containing the symbols that will be used to split the inputed strings into tokens.
+ * @delimiter: A constant string containing the symbols that will be used to split
+ * the inputed strings into tokens.
  * @token_number: Holds the amount  of tokens in a string.
  * Return: Upon success an array of tokens representing the command. Otherwise
  * returns NULL.
@@ -122,7 +126,8 @@ char **token_connector(char *line, const char *delimiter, int token_number)
 }
 
 /**
- * tokenize - Separates the string into an array of tokens splitted using the delimiter. DON'T FORGET TO FREE
+ * tokenize - Separates the string into an array of tokens splitted using the delimiter.
+ * DON'T FORGET TO FREE
  * on receiving function when using tokenize.
  * @token_number: An integer representing the amount of tokens in the array.
  * @line: String that is separated by an specified delimeter
@@ -156,7 +161,7 @@ char **tokenize(int token_number, char *line, const char *delimiter)
 /**
  * count_token - Counts tokens in the passed string.
  * @line: String that is separated by an specified delimeter
- * @delim: The desired delimeter to separate tokens.
+ * @delimeter: The desired delimeter to separate tokens.
  * Return: Upon success the total count of the tokens. Otherwise -1.
  */
 
