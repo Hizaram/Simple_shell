@@ -20,15 +20,14 @@ void parser(char *line, size_t size, int command_counter, char **av)
 	const char *delimiter = "\n\t ";
 
 	token_number = 0;
-	if (isatty(0)){
+	if (isatty(0))
 		write(STDOUT_FILENO, PROMPT, str_len(PROMPT));
-	}
 	signal(SIGINT, sigintH);
 	read_len = getline(&line, &size, stdin);
 	if (read_len != -1)
 	{
 		if (read_len == EOF)
-		       exit (0);
+			exit(0);
 		p_array = token_connector(line, delimiter, token_number);
 		if (p_array[0] == NULL)
 		{

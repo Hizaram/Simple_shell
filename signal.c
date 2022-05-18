@@ -1,5 +1,10 @@
 #include "sh.h"
 
+/**
+ * sigintH - ignores the Ctrl+C command
+ * @signum: command fed into it
+ */
+
 void sigintH(int signum)
 {
 	if (signum == SIGINT)
