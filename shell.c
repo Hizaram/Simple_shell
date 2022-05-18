@@ -19,7 +19,7 @@ int main(__attribute__((unused)) int ac, char **av)
 		command_count++;
 		line = NULL;
 		size = 0;
-		parser(line, size, command_counter, av);
+		parser(line, size, command_count, av);
 
 	} while (1);
 
