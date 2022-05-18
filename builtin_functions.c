@@ -4,8 +4,9 @@
  * cdir_b - Changes the current working directory to the parameter passed to cd.
  * if no parameter is passed it will change directory to HOME.
  * @line: A string representing the input from the user.
+ * Return: 1
  */
-void cdir_b(char *line)
+int cdir_b(char *line)
 {
 	int index;
 	int token_number;
@@ -30,13 +31,15 @@ void cdir_b(char *line)
 	else
 		chdir(p_array[1]);
 	double_free(p_array);
+	return (1);
 }
 
 /**
  * environ_b - Prints all the environmental variables in the current shell.
  * @line: A string representing the input from the user.
+ * Return: 1
  */
-void environ_b(__attribute__((unused))char *line)
+int environ_b(__attribute__((unused))char *line)
 {
 	int i;
 	int j;
@@ -47,17 +50,20 @@ void environ_b(__attribute__((unused))char *line)
 			write(STDOUT_FILENO, &environ[i][j], 1);
 		write(STDOUT_FILENO, "\n", 1);
 	}
+	return (1);
 }
 
 /**
  * exit_b - Exits the shell. After freeing allocated resources.
  * @line: A string representing the input from the user.
+ * Return: 0
  */
-void exit_b(char *line)
+int exit_b(char *line)
 {
 	free(line);
 	print_str("\n", 1);
 	exit(1);
+	return (0);
 }
 
 /**

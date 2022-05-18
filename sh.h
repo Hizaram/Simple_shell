@@ -1,5 +1,5 @@
-#ifndef _SH_
-#define _SH_
+#ifndef _SH_H
+#define _SH_H
 
 #include <string.h>
 #include <stdio.h>
@@ -23,7 +23,7 @@
 typedef struct builtin_d
 {
 	char *built;
-	void (*f)(char *);
+	int (*f)(char *);
 } builtin_t;
 
 extern char **environ;
