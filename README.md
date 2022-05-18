@@ -38,7 +38,7 @@ You have to handle the “end of file” condition (Ctrl+D)
 
 # Compilation
 All the files will be compiled with following:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
 Once compiled, to start the program, run;
 `./hsh`
@@ -62,9 +62,9 @@ List of functions.
 | Function Name |	Description |
 | ------------- | ----------------- |
 | `parser`	| 	Parses the command line looking for commands and argumements. |
-| `create_Child` |	Forks the current process in order to execute another program. |
+| `create_child` |	Forks the current process in order to execute another program. |
 | `tokenize` |	Separates a string in to an array of tokens based on a delimiter passed to the function. |
-| `count_token` |	Counts how many tokens are on a given string that is separated by a delimeter. |
+| `count_token` |	Counts how many tokens are on a given string that is separated by a delimiter. |
 | `find_path` |	Looks through the environmental variables until it finds the PATH variable, It then returns the index of its position. |
 | `tokenize_path` |	Separates the PATH variable into separate strings each containing a directory in the PATH. |
 | `search_directories` |	Looks through directories stored in path_tokens for a specifc file name which represents a command. |
@@ -74,7 +74,7 @@ List of functions.
 | `print_str` |	Prints a string character by character. |
 | `cdir_b` |	Changes the current working directory to the parameter passed to the command cd. |
 | `environ_b`  |	Prints all environmental variables available in the current shell. |
-| `check_built_ins` |	Checks if a command exitst as a builtin funcition and then it returns a pointer to the right function. |
+| `check_built_ins` |	Checks if a command exits as a builtin funcition and then it returns a pointer to the right function. |
 
 # Authors
 Nwachukwu Promise Chizaram and Christianah Olorunda

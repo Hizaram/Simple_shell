@@ -8,28 +8,28 @@
 void cdir_b(char *line)
 {
 	int index;
-	int token_count;
-	char **param_array;
-	const char *delim = "\n\t ";
+	int token_number;
+	char **p_array;
+	const char *delimiter = "\n\t ";
 
-	token_count = 0;
-	param_array = token_interface(line, delim, token_count);
-	if (param_array[0] == NULL)
+	token_number = 0;
+	p_array = token_connector(line, delimiter, token_number);
+	if (p_array[0] == NULL)
 	{
-		single_free(2, param_array, line);
+		single_free(2, p_array, line);
 		return;
 	}
-	if (param_array[1] == NULL)
+	if (p_array[1] == NULL)
 	{
 		index = find_path("HOME");
 		chdir((environ[index]) + 5);
 	}
-	else if (_strcmp(param_array[1], "-") == 0)
-		print_str(param_array[1], 0);
+	else if (_strcmp(p_array[1], "-") == 0)
+		print_str(p_array[1], 0);
 
 	else
-		chdir(param_array[1]);
-	double_free(param_array);
+		chdir(p_array[1]);
+	double_free(p_array);
 }
 
 /**
@@ -71,8 +71,8 @@ void (*check_built_ins(char *str))(char *str)
 
 	builtin_t buildin[] = {
 		{"exit", exit_b},
-		{"env", env_b},
-		{"cd", cd_b},
+		{"env", environ_b},
+		{"cd", cdir_b},
 		{NULL, NULL}
 	};
 

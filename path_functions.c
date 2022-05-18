@@ -85,7 +85,7 @@ char **tokenize_path(int index, char *str)
 	token_count = 0;
 	/*Moving the pointer len of str plus = sign*/
 	env_var = environ[index] + (len + 1);
-	path_tokens = token_interface(env_var, delim, token_count);
+	path_tokens = token_connector(env_var, delim, token_count);
 	if (path_tokens == NULL)
 		return (NULL);
 

@@ -28,7 +28,7 @@ typedef struct builtin_d
 
 extern char **environ;
 
-char **token_interface(char *, const char *, int);
+char **token_connector(char *, const char *, int);
 int count_token(char *, const char *);
 char **tokenize(int, char *, const char *);
 void create_child(char **, char *, int, char **);
