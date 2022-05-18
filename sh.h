@@ -23,7 +23,7 @@
 typedef struct builtin_d
 {
 	char *built;
-	int (*f)(char *);
+	void (*f)(char *);
 } builtin_t;
 
 extern char **environ;
