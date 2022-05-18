@@ -1,7 +1,8 @@
 #include "sh.h"
 
 /**
- * cdir_b - Changes the current working directory to the parameter passed to cd.
+ * cdir_b - Changes the current working directory to the parameter
+ passed to cd.
  * if no parameter is passed it will change directory to HOME.
  * @line: A string representing the input from the user.
  */
@@ -54,7 +55,7 @@ void environ_b(__attribute__((unused))char *line)
  * exit_b - Exits the shell. After freeing allocated resources.
  * @line: A string representing the input from the user.
  */
-int exit_b(char *line)
+void exit_b(char *line)
 {
 	free(line);
 	print_str("\n", 1);
