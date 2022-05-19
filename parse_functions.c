@@ -17,7 +17,7 @@ void parser(char *line, size_t size, int command_counter, char **av)
 	ssize_t read_len;
 	int token_number;
 	char **p_array;
-	const char *delimiter = "\n\t ";
+	const char *delimiter = " \n\t";
 
 	token_number = 0;
 	if (isatty(0))
