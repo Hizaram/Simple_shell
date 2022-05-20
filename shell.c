@@ -15,6 +15,8 @@ int main(__attribute__((unused)) int ac, char **av)
 
 	command_count = 0;
 	signal(SIGINT, SIG_IGN);
+	if (!isatty(0))
+		write(STDOUT_FILENO, PROMPT, str_len(PROMPT));
 	do {
 		command_count++;
 		line = NULL;

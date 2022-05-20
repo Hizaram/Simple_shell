@@ -1,18 +1,19 @@
 #include "sh.h"
 
 /**
- * str_len - Calculates the lenght of a string.
+ * str_len - Calculates the length of a string.
  * @str: String that needs length to be found.
  * Return: Upon success returns the length of a string. otherwise 0.
  */
 int str_len(char *str)
 {
-	int i;
+	int i = 0;
 
 	if (str == NULL)
 		return (0);
-	for (i = 0; str[i] != '\0'; i++)
-		;
+	while (str[i] != '\0')
+		i++;
+
 	return (i);
 }
 

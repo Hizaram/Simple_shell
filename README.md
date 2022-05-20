@@ -50,10 +50,9 @@ The Tyza shell supports most shell commands, such as `cat`, `pwd`, `ls -la` and 
 Built-Ins
 
 The following built-ins are supported by the Tyza shell:
-
-    *`env` - Print the current environment
-    *`setenv VARIABLE VALUE` - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
-    *`unsetenv VARIABLE` - Remove an environment VARIABLE
+*`env` - Print the current environment
+*`setenv VARIABLE VALUE` - Initialize a new environment VARIABLE with VALUE, or modify an existing VARIABLE with VALUE
+*`unsetenv VARIABLE` - Remove an environment VARIABLE
 
 Return Value
 
