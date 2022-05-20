@@ -29,11 +29,15 @@ int _strcmp(char *s1, char *s2)
 char *_strdup(char *src)
 {
 	int i;
-	int len;
+	int len = 0;
 	char *dest;
-
+	
+	if (src == NULL)
+		return (NULL);
 	len = str_len(src);
 	dest = malloc(sizeof(char) * (len + 1));
+	if (dest == NULL)
+		return (NULL);
 
 	for (i = 0; src[i] != '\0'; i++)
 		dest[i] = src[i];
@@ -67,5 +71,5 @@ void print_str(char *str, int new_line)
  */
 int _write_char(char c)
 {
-	return (write(1, &c, 1));
+	return (write(STDOUT_FILENO, &c, 1));
 }

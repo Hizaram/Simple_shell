@@ -11,7 +11,7 @@ void cdir_b(char *line)
 	int index;
 	int token_number;
 	char **p_array;
-	const char *delimiter = " \t\r\n\v";
+	const char *delimiter = "\n ";
 
 	token_number = 0;
 	p_array = token_connector(line, delimiter, token_number);

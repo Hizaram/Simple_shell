@@ -17,7 +17,7 @@ void parser(char *line, size_t size, int command_counter, char **av)
 	ssize_t read_len;
 	int token_number;
 	char **p_array;
-	const char *delimiter = " \t\r\n\v";
+	const char *delimiter = "\n ";
 
 	token_number = 0;
 	if (isatty(0))
@@ -28,6 +28,8 @@ void parser(char *line, size_t size, int command_counter, char **av)
 	{
 		if (read_len == EOF)
 			exit(0);
+		if (read_len == '\n')
+			return;
 		p_array = token_connector(line, delimiter, token_number);
 		if (p_array[0] == NULL)
 		{
